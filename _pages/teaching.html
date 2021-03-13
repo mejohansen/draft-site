@@ -1,0 +1,31 @@
+---
+layout: page
+title: "Teaching"
+permalink: /teaching/
+---
+
+You can find syllabi for my recent courses below. If you're interested in any additional teaching materials, you're welcome to <a href="/cv/">get in touch</a>.
+
+<h2>Recent courses</h2>
+
+<ul class="teaching-list">
+{% for course in site.teaching %}
+<li><strong>{{ course.title }}</strong> {{ course.semester }} | <a href="{{ course.syllabus }}">Syllabus</a>&nbsp; <i class="fa fa-file-pdf-o" aria-hidden="true"></i></li>
+{% endfor %}
+</ul>
+
+<h2>Additional teaching</h2>
+
+<p><em>I taught the following courses at the University of Arizona.</em></p>
+
+<ul>
+<li>Metaphysics (PHIL 440)</li>
+<li>Minds and morals (PHIL/PSY 348)</li>
+<li>Minds, brains, and computers (PHIL/PSY 346)</li>
+<li>Healthcare ethics (CHS 309)</li>
+<li>Consciousness and cognition (PHIL/PSY 241)</li>
+<li>Science and inquiry (PHIL 160D3)</li>
+<li>Philosophical perspectives on society (PHIL 150C1)</li>
+<li>Introduction to philosophy (PHIL 111)</li>
+<li>Logic and critical thinking (PHIL 110)</li>
+</ul>

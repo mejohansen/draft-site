@@ -1,0 +1,38 @@
+// Additions to the masthead
+//
+//
+
+.masthead-title {
+	//display: inline-block;
+	//font-weight: 700;
+	//font-size: 1.17em;
+}
+
+.masthead {
+	//margin-top: 1em;
+}
+
+.top-menu {
+	float: right;
+	font-weight: 400;
+	color: var(--body-color);
+}
+
+.top-menu a {
+	text-decoration: none;
+	margin-left: var(--spacer);
+	opacity: 0.5;
+}
+
+.top-menu a:hover {
+	opacity: 1;
+}
+
+.masthead small a {
+	margin-left: 0.5em;
+}
+
+.first-menu {
+	margin-left: var(--spacer-2);
+}
+

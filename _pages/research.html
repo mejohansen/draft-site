@@ -1,0 +1,18 @@
+---
+permalink: /research/
+layout: page
+title: Publications
+---
+
+<ul class="publication-list">
+{% for pub in site.publications reversed %}
+<li class="publication">
+	<div class="publication-title"> {{ pub.title }} </div>
+	<div class="publication-info"> {{ pub.venue}} 
+		{% if pub.forthcoming %}(Forthcoming) {% else %} ({{ pub.date | date: "%b %Y" }}) {% endif %}
+		{% if pub.paperurl %} | <a href="{{ pub.paperurl }}">Link</a> {% endif %}
+	</div>
+	<div class="publication-abstract"> <p>{{ pub.content }}</p> </div>
+</li>
+{% endfor %}
+</ul>

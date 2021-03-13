@@ -1,0 +1,21 @@
+// Publications
+// Formats and styles the publication list
+// 
+
+.publication-list {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.publication {}
+
+.publication-title {
+	color: var(--heading-color);
+	font-weight: 600;
+	font-size: 1.25rem;
+}
+
+.publication-info {}
+
+.publication-abstract {}
+

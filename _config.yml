@@ -1,8 +1,8 @@
 # Setup
-title: Poole
-tagline: The Jekyll Butler
-url: https://getpoole.com
-paginate: 1
+title: Marc Johansen
+tagline: 
+url: https://marcjohansen.net
+paginate: 
 baseurl: ""
 permalink: pretty
 
@@ -11,6 +11,12 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
+
+# Accessing pages _pages and additional includes
+include:
+  - .htaccess
+  - _pages
+  - files
 
 # Optimize Jekyll
 exclude:
@@ -22,6 +28,16 @@ exclude:
   - LICENSE.md
   - README.md
 
+# Collections [ADDED]
+collections:
+  teaching:
+    output: false
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+
+
 sass:
   sass_dir: _sass
   style: :compressed
@@ -29,13 +45,14 @@ sass:
 # Options
 
 # Replace this value and uncomment to enable Google Analytics tracking
-# ga_analytics: UA-000000-0
+ga_analytics: G-7HZ85B3595
 
 # Specify the author for blog posts
 author:
-  name: Mark Otto
-  url: https://twitter.com/mdo
-  email: markdotto@gmail.com
+  name: Marc Johansen
+  url: https://marcjohansen.net
+  email: marcjohansen@creighton.edu
 
 # Custom vars
-version: 3.0.0
+#version: 3.0.0fr
+version: 4.0
