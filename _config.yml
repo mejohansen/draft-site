@@ -27,6 +27,7 @@ exclude:
   - Gemfile.lock
   - LICENSE.md
   - README.md
+  - Poole-README.md
 
 # Collections [ADDED]
 collections:
